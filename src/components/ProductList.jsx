@@ -42,7 +42,7 @@ const ProductList = () => {
 
   return (
     <section>
-      <h1>Products</h1>
+      <h1>Products ({filteredProducts.length})</h1>
 
       {filteredProducts.length === 0 ? (
         <p className="message">
