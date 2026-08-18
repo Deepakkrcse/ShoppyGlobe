@@ -16,11 +16,16 @@ const ProductList = () => {
   const search = useSelector(selectSearch);
 
   // Filter the products using search text stored in Redux.
-  const filteredProducts = products.filter((product) =>
-    product.title
-      .toLowerCase()
-      .includes(search.toLowerCase())
-  );
+  const filteredProducts = products.filter(
+  (product) => {
+    const productName =
+      product.title.toLowerCase();
+
+    return productName.includes(
+      search.toLowerCase()
+    );
+  }
+);
 
   if (loading) {
     return (
