@@ -12,6 +12,7 @@ const ProductDetail = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
+  // Fetch the selected product whenever the route ID changes.
   useEffect(() => {
     const fetchProduct = async () => {
       try {
