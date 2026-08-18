@@ -52,6 +52,7 @@ const cartSlice = createSlice({
         (item) => item.id === action.payload
       );
 
+      // Quantity cannot go below one.
       if (item && item.quantity > 1) {
         item.quantity -= 1;
       }
