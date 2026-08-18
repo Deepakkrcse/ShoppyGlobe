@@ -210,3 +210,40 @@ form button {
   font-size: 70px;
 }
 
+/* Responsive design */
+@media (max-width: 800px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .header input {
+    width: 100%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detail,
+  .checkout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header nav {
+    width: 100%;
+  }
+
+  .cart-item {
+    flex-direction: column;
+  }
+}
