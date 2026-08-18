@@ -12,6 +12,7 @@ const CartItem = ({ item }) => {
 
   return (
     <article className="cart-item">
+    {/* Cart images are also loaded lazily. */}
       <img
         src={item.thumbnail}
         alt={item.title}

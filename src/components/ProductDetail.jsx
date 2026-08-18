@@ -67,6 +67,7 @@ const ProductDetail = () => {
 
   return (
     <section className="detail">
+    {/* Lazy loading prevents the image from loading immediately. */}    
       <img
         src={product.thumbnail}
         alt={product.title}

@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import useProducts from "../hooks/useProducts";
 import { selectSearch } from "../redux/selectors";
 
+// ProductItem is loaded only when it is required.
 const ProductItem = lazy(() => import("./ProductItem"));
 
 const ProductList = () => {

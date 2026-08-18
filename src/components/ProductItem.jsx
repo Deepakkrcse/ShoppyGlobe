@@ -13,6 +13,7 @@ const ProductItem = ({ product }) => {
 
   return (
     <article className="product-card">
+    {/* Browser loads the image only when it is close to the viewport. */}
       <img
         src={product.thumbnail}
         alt={product.title}
