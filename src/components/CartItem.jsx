@@ -56,6 +56,7 @@ const CartItem = ({ item }) => {
               removeFromCart(item.id)
             )
           }
+          title="Remove product from cart"
         >
           Remove
         </button>
