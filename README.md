@@ -4,7 +4,7 @@ ShoppyGlobe is a basic e-commerce application built using React and Vite.
 
 ## GitHub Repository
 
-
+https://github.com/Deepakkrcse/ShoppyGlobe.git
 
 ## Technologies Used
 
