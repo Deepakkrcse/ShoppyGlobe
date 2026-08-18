@@ -28,8 +28,11 @@ const ProductItem = ({ product }) => {
           View
         </Link>
 
-        <button onClick={handleAddToCart}>
-          Add to Cart
+        <button 
+            onClick={handleAddToCart}
+            title="Add this product to your cart"
+        >
+            Add to Cart
         </button>
       </div>
     </article>
