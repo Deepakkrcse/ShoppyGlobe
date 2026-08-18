@@ -6,6 +6,10 @@ import {
   selectCartTotal,
 } from "../redux/selectors";
 
+import {
+  useNavigate,
+} from "react-router-dom";
+
 import { clearCart } from "../redux/cartSlice";
 
 const Checkout = () => {
@@ -13,6 +17,7 @@ const Checkout = () => {
 
   const items = useSelector(selectCartItems);
   const total = useSelector(selectCartTotal);
+  const navigate = useNavigate();
 
   const [orderPlaced, setOrderPlaced] =
     useState(false);
@@ -53,7 +58,7 @@ const Checkout = () => {
 
               // Redirect to Home automatically.
               setTimeout(() => {
-                window.location.href = "/";
+                navigate("/");
               }, 1500);
             }}
           >
